@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+/* #28a745 */
+
+/* ---- Global styles ------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  line-height: 1.6;
+  background-color: #333;
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------- Utilities -------------- */
+
+.text-primary {
+  color: #20bf6b;
+}
+
+.bg-light {
+  color: #333;
+  background: #fff;
+}
+
+.bg-dark {
+  color: #fff;
+  background: #333;
+}
+
+.btn {
+  color: #20bf6b;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 15px 10px;
+  border: 4px solid #20bf6b;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  background: none;
+}
+
+.btn:hover {
+  color: #fff;
+  border-radius: 50px;
+  border-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.btn.btn-filled {
+  color: #fff;
+  background: #20bf6b;
+}
+
+.btn.btn-filled:hover {
+  color: #20bf6b;
+  background: #fff;
+}
+
+.btn-light:hover {
+  color: #333 !important;
+  border-radius: 50px;
+  border-color: #333 !important;
+  transition: all 0.3s ease 0s;
+}
+
+/* ------------ Hero --------------- */
+
+.hero {
+  background: url(./img/ting-tian-_79ZJS8pV70-unsplash.jpg) center center/cover
+    no-repeat;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero.hero-login {
+  background: #000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgb(15, 146, 48) 50%,
+    rgba(0, 0, 0, 1) 75%
+  );
+}
+/* ---------------- Login ------------------- */
+
+.login-form {
+  width: 350px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919;
+  text-align: center;
+}
+.login-form a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+}
+.login-form input[type='text'],
+.login-form input[type='password'] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #20bf6b;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #00a8ff;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.login-form input[type='text']:focus,
+.login-form input[type='password']:focus {
+  width: 280px;
+  color: #20bf6b;
+  border-color: #00a8ff;
+}
+.login-form input[type='submit'] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.login-form input[type='submit']:hover {
+  background: #2ecc71;
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-list {
+  padding: 10px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #20bf6b;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+}
+
+.footer-end a {
+  color: #333;
+}
+
+.footer-end a:hover {
+  color: #20bf6b;
+}
+
+.footer-end p {
+  margin-top: 10px;
+}
+
+/* ----------------- Media Queries --------------- */
+
+@media (min-width: 768px) {
+  .login-form {
+    width: 40%;
+  }
+
+  .footer-lists {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
